@@ -1,32 +1,10 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Task Management Application</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+<?php include('includes/header.php') ?>
 <body>
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-md-3">
-                <!-- SideBar Section Start -->
-                <div class="card h-100">
-                    <div class="card-header">
-                        <h4 class="mb-0">Menu</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <a class="nav-link" href="">Task List</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="">User List</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- SideBar Section End -->
-
-            </div>
+            <?php include('includes/sidebar.php') ?>
             <div class="col-md-9">
                 <div class="card h-100">
                     <div class="card-header">
@@ -64,6 +42,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <?php include('includes/footer.php') ?>
 </body>
 </html>
